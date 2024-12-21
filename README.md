@@ -53,7 +53,7 @@ Restaurant App is an application designed to efficiently manage restaurant order
 ## How to Use the App
 
 ### Access the App
-- Public URL: **Pending**
+- Public URL: **https://restaurant-app-jo.vercel.app/**
 - **Test Credentials**:
   - User: Select a restaurant and a waiter.
   - Password: `1234`
@@ -90,7 +90,7 @@ Restaurant App is an application designed to efficiently manage restaurant order
 
 ## Public Link
 
-- **[Access the App](#)** (Deployment Pending)
+- **https://restaurant-app-jo.vercel.app/**
 
 ---
 
