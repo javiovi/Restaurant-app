@@ -1,4 +1,11 @@
-import { createMocks } from 'node-mocks-http';
+let createMocks: typeof import('node-mocks-http').createMocks;
+
+if (process.env.NODE_ENV === 'test') {
+  import('node-mocks-http').then((module) => {
+    createMocks = module.createMocks;
+  });
+}
+
 import handler from '../src/pages/api/products';
 
 describe('Products API', () => {

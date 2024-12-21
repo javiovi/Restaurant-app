@@ -1,5 +1,12 @@
-import { createMocks } from 'node-mocks-http';
-import handler from '../src/pages/api/orders'
+let createMocks: typeof import('node-mocks-http').createMocks;
+
+if (process.env.NODE_ENV === 'test') {
+  import('node-mocks-http').then((module) => {
+    createMocks = module.createMocks;
+  });
+}
+
+import handler from '../src/pages/api/orders';
 
 describe('Orders API', () => {
   it('should create an order with valid input', async () => {
