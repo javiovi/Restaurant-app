@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 const initialRestaurants = [
   { id: 1, name: 'SuperSano', waiters: ['Alice', 'Bob', 'Charlie'] },
@@ -77,6 +78,10 @@ export default function Restaurant() {
       : [];
 
   return (
+    <>
+    <Head>
+      <title>Restaurant App</title>
+    </Head>
     <div className="min-h-screen flex items-center justify-center bg-primaryBg">
    
    <div
@@ -212,5 +217,6 @@ export default function Restaurant() {
         </div>
       )}
     </div>
+    </>
   );
 }

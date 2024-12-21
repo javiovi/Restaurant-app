@@ -1,5 +1,5 @@
 import { createMocks } from 'node-mocks-http';
-import handler from '../api/products';
+import handler from '../src/pages/api/products';
 
 describe('Products API', () => {
   it('should return products for a valid restaurant ID', async () => {

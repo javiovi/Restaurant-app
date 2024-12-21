@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import Dashboard from "../dashboard";
+import Dashboard from "../src/pages/dashboard";
 
 beforeEach(() => {
   global.fetch = jest.fn().mockImplementation((url) => {

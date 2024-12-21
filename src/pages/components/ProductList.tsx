@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fetchProducts } from '../services/apiService';
+import { fetchProducts } from '../../../services/apiService';
 
 interface Product {
   id: number;
@@ -49,6 +49,7 @@ const ProductList = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  
   return (
     <div>
       {restaurants.map((restaurant) => (

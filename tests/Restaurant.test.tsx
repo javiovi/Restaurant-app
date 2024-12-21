@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import { render, screen, fireEvent } from '@testing-library/react';
 
-import Restaurant from '../restaurant';
+import Restaurant from '../src/pages/restaurant';
 
 describe('Restaurant Login', () => {
   it('should render the login form', () => {

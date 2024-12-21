@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect, useState, useRef} from "react";
 import Image from 'next/image';
+import Head from 'next/head';
 
 
 type Product = {
@@ -154,6 +155,12 @@ const Dashboard = () => {
 
 
   return (
+    <>
+    <Head>
+      <title>Restaurant App</title>
+    </Head>
+ 
+  
     <div className="flex min-h-screen bg-primaryBg text-white">
    
       <div
@@ -360,6 +367,7 @@ const Dashboard = () => {
 
 
     </div>
+    </>
   );
 };
 

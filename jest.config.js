@@ -8,4 +8,7 @@ module.exports = {
   moduleNameMapper: {
     "\\.(css|less|sass|scss)$": "identity-obj-proxy", 
   },
+
+  testMatch: ['**/__tests__/**/*.test.[jt]s?(x)'],
+
 };

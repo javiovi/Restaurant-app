@@ -1,5 +1,5 @@
 import { createMocks } from 'node-mocks-http';
-import handler from '../api/orders';
+import handler from '../src/pages/api/orders'
 
 describe('Orders API', () => {
   it('should create an order with valid input', async () => {
